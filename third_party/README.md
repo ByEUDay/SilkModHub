@@ -75,13 +75,3 @@ cmake ..
 ```
 
 不再有任何 git clone 网络请求，也就不会再卡住了。
-
-## 另外注意
-
-`find_package(CURL REQUIRED)` 用的是系统自带的 libcurl，不走网络下载，
-需要你本机装好开发库，例如：
-
-- Ubuntu/Debian: `sudo apt install libcurl4-openssl-dev`
-- macOS (Homebrew): `brew install curl`
-- Windows: 建议用 vcpkg 安装 `curl`，再在 cmake 命令加上
-  `-DCMAKE_TOOLCHAIN_FILE=<vcpkg路径>/scripts/buildsystems/vcpkg.cmake`
