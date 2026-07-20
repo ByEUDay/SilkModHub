@@ -38,7 +38,7 @@ python3 main.py
 **依赖**：CMake ≥ 3.16、支持 C++17 的编译器、libcurl 开发包、Python 3.9+、网络连接
 （用于 CMake FetchContent 拉取 nlohmann/json、miniz、pybind11 源码）
 
-```bash
+
 # 可选：先运行依赖检测脚本，获取你所在系统的具体安装命令
 python3 scripts/install_dependencies.py
 
