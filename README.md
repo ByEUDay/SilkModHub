@@ -1,6 +1,6 @@
 # SilkModHub · 丝之歌 Mod 管理器
 
-一个为《空洞骑士：丝之歌》(Hollow Knight: Silksong) 打造的桌面 Mod 管理器。
+一个为《空洞骑士：丝之歌》(Hollow Knight: Silksong) 打造的桌面 macOS Mod 管理器。
 
 - **前端**：Python 3.12
 - **后端**：C++17
@@ -68,6 +68,9 @@ python3 scripts/detect_game.py
 ```
 
 ---
+
+##Windows和Linux去哪了
+作者只有Apple Silicon Mac，没法编译Windows和Linux，如果想用自己编译，谢谢！
 
 ## 关于雷霆商店社区标识
 
