@@ -23,25 +23,6 @@
 
 ---
 
-## 目录结构
-
-```
-SilkModHub/
-├── backend/          # C++ 核心逻辑（游戏检测 / 模组管理 / 雷霆商店客户端 / 配置）
-├── bindings/          # pybind11 绑定，编译产物 silk_backend.*.so 会输出到 frontend/
-├── frontend/          # PyQt6 GUI
-│   ├── core/          # backend.py 统一门面、config.py 常量、theme.py 主题管理
-│   ├── ui/            # 主窗口、设置窗口、模组卡片、通用控件
-│   ├── themes/         # silk / dark / light 三套 QSS
-│   └── assets/         # 图标等静态资源
-├── data/               # config.json（用户配置）、mods.json（本地模组清单）
-├── scripts/            # detect_game.py / install_dependencies.py 辅助脚本
-├── CMakeLists.txt       # 根构建脚本（FetchContent 拉取 nlohmann/json、miniz、pybind11）
-└── build.sh             # 一键构建脚本
-```
-
----
-
 ## 快速开始
 
 ### 方式一：只运行前端（纯 Python 回退实现，无需编译 C++）
