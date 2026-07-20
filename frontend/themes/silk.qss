@@ -1,0 +1,288 @@
+/* ===================== SilkModHub · 丝绸主题 =====================
+   配色灵感来自《空洞骑士：丝之歌》的赤线与黑影美术风格
+   主色: 深胭脂红 #C23B62 / 背景: 墨黑渐层 / 点缀: 骨白 #F1E7DD
+==================================================================== */
+
+* {
+    font-family: "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    outline: none;
+}
+
+#RootBackground {
+    background-color: #171018;
+}
+
+/* ---------------- 侧边栏 ---------------- */
+#Sidebar {
+    background-color: #1F1620;
+    border-right: 1px solid #34222E;
+}
+
+#BrandTitle {
+    color: #F1E7DD;
+    font-size: 19px;
+    font-weight: 700;
+}
+
+#BrandSubtitle {
+    color: #8A7280;
+    font-size: 12px;
+    margin-bottom: 4px;
+}
+
+#SidebarSectionLabel {
+    color: #8A7280;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-top: 6px;
+}
+
+#NavButton {
+    text-align: left;
+    color: #C9B8C2;
+    background: transparent;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 12px;
+    font-size: 14px;
+}
+#NavButton:hover {
+    background-color: #2C1D28;
+}
+#NavButton:checked {
+    background-color: #C23B62;
+    color: #FFF6F1;
+    font-weight: 600;
+}
+
+#CategoryList {
+    background: transparent;
+    border: none;
+    color: #C9B8C2;
+    font-size: 13px;
+}
+#CategoryList::item {
+    padding: 7px 10px;
+    border-radius: 8px;
+    margin: 1px 0;
+}
+#CategoryList::item:selected {
+    background-color: #34222E;
+    color: #F1E7DD;
+}
+#CategoryList::item:hover {
+    background-color: #2C1D28;
+}
+
+#SettingsButton {
+    text-align: left;
+    color: #C9B8C2;
+    background-color: #2C1D28;
+    border: 1px solid #3D2735;
+    border-radius: 10px;
+    padding: 9px 12px;
+    font-size: 13px;
+}
+#SettingsButton:hover {
+    background-color: #3D2735;
+}
+
+#VersionLabel {
+    color: #5C4A55;
+    font-size: 11px;
+    margin-top: 6px;
+}
+
+/* ---------------- 顶部工具栏 ---------------- */
+#SearchBox {
+    background-color: #241823;
+    border: 1px solid #3D2735;
+    border-radius: 19px;
+    padding: 6px 16px;
+    color: #F1E7DD;
+    font-size: 13px;
+}
+#SearchBox:focus {
+    border: 1px solid #C23B62;
+}
+
+#PillButton {
+    background-color: #241823;
+    color: #E3D3DA;
+    border: 1px solid #3D2735;
+    border-radius: 16px;
+    padding: 6px 18px;
+    font-size: 13px;
+}
+#PillButton:hover {
+    background-color: #34222E;
+}
+#PillButton:disabled {
+    color: #5C4A55;
+}
+
+#PillButtonAccent {
+    background-color: #C23B62;
+    color: #FFF6F1;
+    border: none;
+    border-radius: 16px;
+    padding: 6px 20px;
+    font-size: 13px;
+    font-weight: 600;
+}
+#PillButtonAccent:hover {
+    background-color: #D6547A;
+}
+#PillButtonAccent:pressed {
+    background-color: #A6294F;
+}
+
+/* ---------------- 状态横幅 ---------------- */
+#StatusBanner, #StatusBannerOk, #StatusBannerWarn {
+    padding: 10px 16px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+#StatusBannerOk {
+    background-color: rgba(97, 187, 133, 0.14);
+    color: #7FD9A4;
+    border: 1px solid rgba(97, 187, 133, 0.3);
+}
+#StatusBannerWarn {
+    background-color: rgba(226, 156, 74, 0.14);
+    color: #F0B27A;
+    border: 1px solid rgba(226, 156, 74, 0.3);
+}
+#StatusBanner {
+    background-color: #241823;
+    color: #C9B8C2;
+}
+
+/* ---------------- 模组卡片 ---------------- */
+#ScrollArea {
+    background: transparent;
+    border: none;
+}
+#ScrollArea > QWidget > QWidget {
+    background: transparent;
+}
+
+#ModCard {
+    background-color: #221721;
+    border: 1px solid #34222E;
+    border-radius: 16px;
+}
+#ModCard:hover {
+    border: 1px solid #C23B62;
+}
+
+#ModIcon {
+    background-color: #34222E;
+    border-radius: 12px;
+    font-size: 22px;
+    color: #C9B8C2;
+}
+
+#ModName {
+    color: #F1E7DD;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+#ModAuthor {
+    color: #8A7280;
+    font-size: 11px;
+}
+
+#ModDesc {
+    color: #B7A7B0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+#ModMeta {
+    color: #7A6672;
+    font-size: 11px;
+}
+
+#PlaceholderLabel {
+    color: #5C4A55;
+    font-size: 14px;
+    padding: 60px;
+}
+
+/* ---------------- 进度条 ---------------- */
+#InstallProgress {
+    background-color: #241823;
+    border-radius: 3px;
+}
+#InstallProgress::chunk {
+    background-color: #C23B62;
+    border-radius: 3px;
+}
+
+/* ---------------- Toast 提示 ---------------- */
+#Toast_success {
+    background-color: #1E3A2A;
+    border: 1px solid #3F8B5E;
+    border-radius: 10px;
+}
+#Toast_error {
+    background-color: #3A1E24;
+    border: 1px solid #C23B62;
+    border-radius: 10px;
+}
+#Toast_info {
+    background-color: #241823;
+    border: 1px solid #3D2735;
+    border-radius: 10px;
+}
+#ToastLabel {
+    color: #F1E7DD;
+    font-size: 13px;
+}
+
+/* ---------------- 设置对话框 ---------------- */
+#SettingsDialog {
+    background-color: #1F1620;
+}
+#DialogTitle {
+    color: #F1E7DD;
+    font-size: 17px;
+    font-weight: 700;
+}
+#SettingsStatus {
+    color: #8A7280;
+    font-size: 12px;
+}
+
+QLabel { color: #C9B8C2; }
+QLineEdit, QComboBox {
+    background-color: #241823;
+    color: #F1E7DD;
+    border: 1px solid #3D2735;
+    border-radius: 8px;
+    padding: 6px 10px;
+}
+QCheckBox { color: #C9B8C2; }
+QPushButton {
+    background-color: #2C1D28;
+    color: #E3D3DA;
+    border: 1px solid #3D2735;
+    border-radius: 8px;
+    padding: 6px 14px;
+}
+QPushButton:hover { background-color: #3D2735; }
+
+QScrollBar:vertical {
+    background: transparent;
+    width: 10px;
+}
+QScrollBar::handle:vertical {
+    background: #3D2735;
+    border-radius: 5px;
+    min-height: 30px;
+}
+QScrollBar::handle:vertical:hover { background: #C23B62; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }

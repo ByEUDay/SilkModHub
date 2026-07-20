@@ -1,0 +1,102 @@
+/* ===================== SilkModHub · 晴日主题 ===================== */
+* {
+    font-family: "Microsoft YaHei UI", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    outline: none;
+}
+
+#RootBackground { background-color: #F7F3F1; }
+
+#Sidebar {
+    background-color: #FFFFFF;
+    border-right: 1px solid #EAE1DD;
+}
+#BrandTitle { color: #2E2224; font-size: 19px; font-weight: 700; }
+#BrandSubtitle { color: #9C8A85; font-size: 12px; margin-bottom: 4px; }
+#SidebarSectionLabel { color: #9C8A85; font-size: 11px; font-weight: 600; letter-spacing: 1px; margin-top: 6px; }
+
+#NavButton {
+    text-align: left; color: #5C4A4C; background: transparent;
+    border: none; border-radius: 10px; padding: 10px 12px; font-size: 14px;
+}
+#NavButton:hover { background-color: #F3E9E6; }
+#NavButton:checked { background-color: #C23B62; color: #FFFFFF; font-weight: 600; }
+
+#CategoryList { background: transparent; border: none; color: #5C4A4C; font-size: 13px; }
+#CategoryList::item { padding: 7px 10px; border-radius: 8px; margin: 1px 0; }
+#CategoryList::item:selected { background-color: #F3E9E6; color: #2E2224; }
+#CategoryList::item:hover { background-color: #FBF2EF; }
+
+#SettingsButton {
+    text-align: left; color: #5C4A4C; background-color: #F7F3F1;
+    border: 1px solid #EAE1DD; border-radius: 10px; padding: 9px 12px; font-size: 13px;
+}
+#SettingsButton:hover { background-color: #EFE3DF; }
+#VersionLabel { color: #C4B3AF; font-size: 11px; margin-top: 6px; }
+
+#SearchBox {
+    background-color: #FFFFFF; border: 1px solid #E4D6D1; border-radius: 19px;
+    padding: 6px 16px; color: #2E2224; font-size: 13px;
+}
+#SearchBox:focus { border: 1px solid #C23B62; }
+
+#PillButton {
+    background-color: #FFFFFF; color: #5C4A4C; border: 1px solid #E4D6D1;
+    border-radius: 16px; padding: 6px 18px; font-size: 13px;
+}
+#PillButton:hover { background-color: #F3E9E6; }
+#PillButton:disabled { color: #C4B3AF; }
+
+#PillButtonAccent {
+    background-color: #C23B62; color: #FFFFFF; border: none;
+    border-radius: 16px; padding: 6px 20px; font-size: 13px; font-weight: 600;
+}
+#PillButtonAccent:hover { background-color: #D6547A; }
+#PillButtonAccent:pressed { background-color: #A6294F; }
+
+#StatusBannerOk {
+    background-color: rgba(63, 139, 94, 0.1); color: #2F7A52;
+    border: 1px solid rgba(63, 139, 94, 0.28); border-radius: 10px; padding: 10px 16px; font-size: 13px;
+}
+#StatusBannerWarn {
+    background-color: rgba(214, 137, 16, 0.1); color: #B06D0E;
+    border: 1px solid rgba(214, 137, 16, 0.28); border-radius: 10px; padding: 10px 16px; font-size: 13px;
+}
+#StatusBanner { background-color: #FFFFFF; color: #5C4A4C; border-radius: 10px; padding: 10px 16px; font-size: 13px; border: 1px solid #EAE1DD; }
+
+#ScrollArea { background: transparent; border: none; }
+#ScrollArea > QWidget > QWidget { background: transparent; }
+
+#ModCard { background-color: #FFFFFF; border: 1px solid #EAE1DD; border-radius: 16px; }
+#ModCard:hover { border: 1px solid #C23B62; }
+#ModIcon { background-color: #F3E9E6; border-radius: 12px; font-size: 22px; color: #5C4A4C; }
+#ModName { color: #2E2224; font-size: 14px; font-weight: 700; }
+#ModAuthor { color: #9C8A85; font-size: 11px; }
+#ModDesc { color: #6B5A5C; font-size: 12px; }
+#ModMeta { color: #A8968F; font-size: 11px; }
+#PlaceholderLabel { color: #C4B3AF; font-size: 14px; padding: 60px; }
+
+#InstallProgress { background-color: #EFE3DF; border-radius: 3px; }
+#InstallProgress::chunk { background-color: #C23B62; border-radius: 3px; }
+
+#Toast_success { background-color: #E7F5EC; border: 1px solid #3F8B5E; border-radius: 10px; }
+#Toast_error { background-color: #FBEAEA; border: 1px solid #C23B62; border-radius: 10px; }
+#Toast_info { background-color: #FFFFFF; border: 1px solid #EAE1DD; border-radius: 10px; }
+#ToastLabel { color: #2E2224; font-size: 13px; }
+
+#SettingsDialog { background-color: #FFFFFF; }
+#DialogTitle { color: #2E2224; font-size: 17px; font-weight: 700; }
+#SettingsStatus { color: #9C8A85; font-size: 12px; }
+
+QLabel { color: #5C4A4C; }
+QLineEdit, QComboBox {
+    background-color: #FFFFFF; color: #2E2224; border: 1px solid #E4D6D1;
+    border-radius: 8px; padding: 6px 10px;
+}
+QCheckBox { color: #5C4A4C; }
+QPushButton { background-color: #F7F3F1; color: #5C4A4C; border: 1px solid #E4D6D1; border-radius: 8px; padding: 6px 14px; }
+QPushButton:hover { background-color: #EFE3DF; }
+
+QScrollBar:vertical { background: transparent; width: 10px; }
+QScrollBar::handle:vertical { background: #E4D6D1; border-radius: 5px; min-height: 30px; }
+QScrollBar::handle:vertical:hover { background: #C23B62; }
+QScrollBar::add-line:vertical, QScrollBar::sub-line:vertical { height: 0; }
